@@ -38,11 +38,6 @@ class NavDrawer extends Component{
                     >LoginContainer</div> */}
                     {/* <AppBar title={'Categories'} /> */}
                     <Divider />
-                    <Link to={'/'}>
-                        <MenuItem onTouchTap={this.toggle}
-                            primaryText={'Home'}
-                        />
-                    </Link>
                     <Link to={'/cards'}>
                         <MenuItem
                             onTouchTap={this.toggle}
@@ -58,6 +53,11 @@ class NavDrawer extends Component{
                     <Link to={'/prints'}>
                         <MenuItem onTouchTap={this.toggle}
                             primaryText={'Prints'}
+                        />
+                    </Link>
+                    <Link to={'/photobooks'}>
+                        <MenuItem onTouchTap={this.toggle}
+                            primaryText={'Photo Books'}
                         />
                     </Link>
                     

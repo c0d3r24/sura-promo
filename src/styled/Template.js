@@ -4,9 +4,10 @@ import styled from 'styled-components';
 import {media} from '../utils/media';
 
 export const Header = styled.header`
-    text-align: center;
+    text-align: left;
     font-size: 2em;
     font-family: 'Roboto', sans-serif;
+    text-decoration: none;
 `
 export const Container = styled.div`
     display: flex;

@@ -40,8 +40,7 @@ export const SiteHeading = (props) => {
             <ImageContainer>
                 <img style={{
                     width: '400px',
-                    height: '600px',
-                    
+                    height: '600px',  
                 }}src={require('./../images/image1.jpeg')} alt={'sliderImage1'}/>
             </ImageContainer>    
         </Container>

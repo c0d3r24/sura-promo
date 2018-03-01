@@ -5,6 +5,7 @@ import Home from '../containers/Home';
 import Cards from '../containers/Cards';
 import Canvas from '../containers/Canvas';
 import Prints from '../containers/Prints';
+import PhotoBooks from '../containers/PhotoBooks';
 const createRoute = () => {
     return (
         <Route 
@@ -24,6 +25,10 @@ const createRoute = () => {
         <Route
             path={'/prints'}
             component={Prints}
+        />
+        <Route
+            path={'/photobooks'}
+            component={PhotoBooks}
         />
         </Route>
     );
