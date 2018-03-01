@@ -1,7 +1,9 @@
 import React ,{ Component } from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import injectTapEventPlugin from 'react-tap-event-plugin';
-import RaisedButton from 'material-ui/RaisedButton';
+import NavDrawer from '../components/NavDrawer';
+import {Header, Main} from '../styled/Template';
+
 /**
  * injecting TapEvent here.
  * this will help to enhance mobile interaction.
@@ -12,15 +14,13 @@ class Template extends Component {
         return(
             <MuiThemeProvider>
                 <div>
-                <header>
-                    <h1>Sura</h1>
-                    <RaisedButton
-                    label={'Tap this button'}
-                    onTouchTap={() => {console.log('Hello, I workd')}}/>
-                </header>
-                <main>
+                 <NavDrawer />
+                 <Header>
+                     Sura
+                </Header> 
+                <Main>
                     {this.props.children}
-                </main>
+                </Main>
             </div>
             </MuiThemeProvider>
             

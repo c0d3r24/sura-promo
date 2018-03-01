@@ -1,11 +1,10 @@
 import React ,{ Component } from 'react';
-
+import {SiteHeading} from '../styled/Home'
 class Home extends Component {
     render(){
         return(
-            <div>
-              <h3>This is Home</h3>
-            </div>
+              <SiteHeading welcomeText="Welcome to" productName="Sura" >    
+              </SiteHeading>
         );
     }
 }

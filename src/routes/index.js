@@ -2,7 +2,9 @@ import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 import Template from '../containers/Template';
 import Home from '../containers/Home';
-import Profile from '../containers/Profile';
+import Cards from '../containers/Cards';
+import Canvas from '../containers/Canvas';
+import Prints from '../containers/Prints';
 const createRoute = () => {
     return (
         <Route 
@@ -12,8 +14,16 @@ const createRoute = () => {
             component={Home}
         />
         <Route
-            path={'/profile'}
-            component={Profile}
+            path={'/cards'}
+            component={Cards}
+        />
+         <Route
+            path={'/canvas'}
+            component={Canvas}
+        />
+        <Route
+            path={'/prints'}
+            component={Prints}
         />
         </Route>
     );
